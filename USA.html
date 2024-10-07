@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Us a Climate Story!</title>
+    <link rel="stylesheet" href="StyleU.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/3c0a53a71d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="" class="logo"><img src="Resources/img/X-VSPACE.png" alt="Logo" /></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Resources/img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">HOME</a></li>
+                    <li><a href="#somos">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#recursos">RESOURCES</a></li>
+                    <li class="btn-1" id="story-button">
+                        <span id="story-span"><i class="fa-solid fa-location-dot"></i> STORY</span>
+                        <ul class="dropdown">
+                            <li><a href="#" class="country">USA</a></li>
+                            <li><a href="#" class="country">PERU</a></li>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const storyButton = document.getElementById('story-button');
+                                    const dropdown = storyButton.querySelector('.dropdown');
+                                
+                                    storyButton.addEventListener('click', function(event) {
+                                        event.stopPropagation();
+                                        dropdown.classList.toggle('active');
+                                    });
+                                
+                                    document.addEventListener('click', function() {
+                                        dropdown.classList.remove('active');
+                                    });
+                                });
+                            </script>
+                        </ul>
+                    </li>
+                </ul>   
+            </nav>       
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <span>Impacto Climático</span>
+                <h1>NATIONS IN EMERGENCY</h1>
+                <p>Nuestro planeta está enfrentando desafíos sin precedentes; es crucial entender cómo las emisiones de los gases del efecto invernadero están transformando nuestras ciudades y ecosistemas.</p>
+                <a href="Index.html#information" class="btn-2"><i class="fa-solid fa-newspaper"></i> INFORMATION</a>
+                <a href="Index.html#power-bi" class="btn-2"><i class="fa-solid fa-chart-line"></i> DASHBOARD</a>
+            </div>
+            <div class="header-img">
+                <img src="Resources/img/gif_planet.gif" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="select">
+        <h1>USA</h1>
+        <script src="script_subheader.js"></script>
+    </div>
+
+    <section class="country-info">
+        <h2>Getting to know the United States</h2>
+        <div class="country-item">
+            <h3>United Statess</h3>
+            <p>The United States is known for its great cultural, economic, and political influence in the world. However, it faces significant challenges in terms of climate change, including rising temperatures, extreme weather events, and air pollution. Dependence on fossil fuels and deforestation are critical issues that must be addressed to mitigate its environmental impact.</p>
+        </div>
+    </section>
+
+    <section class="info-container">
+        <div class="text-content">
+            <h3>Forest Fires in 2024</h3>
+            <p>In 2024, wildfires in the United States have reached alarming levels, burning more than 6 million acres. Extreme heat waves and prolonged droughts have created perfect conditions for these fires to spread. California and Oregon have been particularly hard hit, with thousands of homes evacuated and communities destroyed.</p>
+            <p>Según la <a href="https://www.nifc.gov" target="_blank">National Interagency Fire Center</a>, The number of forest fires has increased by 30% compared to the average of the last five years. This increase is directly attributed to climate change and inadequate forest management..</p>
+        </div>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="https://via.placeholder.com/150" alt="Incendios en California" class="image">
+                <div class="overlay">California Fires</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://via.placeholder.com/150" alt="Impacto del Cambio Climático" class="image">
+                <div class="overlay">Impacto del Cambio Climático</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://via.placeholder.com/150" alt="Restauración de Ecosistemas" class="image">
+                <div class="overlay">Ecosystem Restoration</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-container">
+        <div class="text-content">
+            <h3>Carbon Dioxide Pollution</h3>
+            <p>CO<sub>2</sub> emissions in the United States were approximately 5.1 billion tons in 2024. Transportation and electricity generation are the main sources of these emissions, accounting for 29% and 25% respectively, according to the <a href="https://www.epa.gov" target="_blank">Environmental Protection Agency (EPA)</a>.</p>
+            <p>The use of fossil fuels remains predominant, although renewable energy is on the rise. The current administration has implemented policies to reduce these emissions, such as incentives for electric vehicles and the expansion of solar and wind energy.</p>            
+        </div>
+    </section>
+
+    <section id="historia">
+        <h2>Desafíos del Cambio Climático</h2>
+        <p>Desde 1880, la temperatura media de Estados Unidos ha aumentado casi 2 °F (1.1 °C), contribuyendo a fenómenos climáticos extremos como huracanes, sequías y olas de calor. Estos eventos no solo afectan el medio ambiente, sino que también tienen un costo económico significativo, con daños estimados en miles de millones de dólares cada año.</p>
+    
+        <section id="history">
+    <h2>Climate Change Challenges</h2>
+    <p>Since 1880, the average temperature in the United States has increased by nearly 2 °F (1.1 °C), contributing to extreme weather events such as hurricanes, droughts, and heat waves. These events not only affect the environment but also have a significant economic cost, with estimated damages in the billions of dollars each year.</p>
+
+    <div class="info-container">
+        <div class="info-item">
+            <img src="https://via.placeholder.com/150" alt="Sustainable Transportation" class="info-image">
+            <h3>Sustainable Transportation</h3>
+            <p>The development of electric vehicles and sustainable public transportation systems are key steps in reducing emissions.</p>
+        </div>
+        <div class="info-item">
+            <img src="https://via.placeholder.com/150" alt="Renewable Energy" class="info-image">
+            <h3>Renewable Energy</h3>
+            <p>Solar and wind energy are gaining traction as alternative sources to fossil fuels.</p>
+        </div>
+        <div class="info-item">
+            <img src="https://via.placeholder.com/150" alt="Energy Efficiency" class="info-image">
+            <h3>Energy Efficiency</h3>
+            <p>Improving the energy efficiency of buildings and industries is essential for reducing the carbon footprint.</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="container-video">
+    <div class="video-title">
+        <h2>Wildfires in the U.S. 2024</h2>
+    </div>
+    
+    <div class="video-section">
+        <iframe width="100%" height="500px" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <section class="text-section">
+        <div class="column">
+            <p>This video addresses wildfires in the U.S. and their relationship to climate change. It shows the devastating impact these fires have on communities and nature.</p>
+        </div>
+        <div class="column">
+            <p>It explores the strategies implemented to combat these disasters and the initiatives to prevent future wildfires through better forest management and community education.</p>
+        </div>
+    </section>
+</div>
+
+<section class="container-multi-video">
+    <div class="left-section">
+        <div class="video-container">
+            <iframe id="videoPlayer" width="100%" height="500px" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+            <h2>Impact of Climate Change in the U.S.</h2>
+            <p>This video analyzes how climate change is affecting the U.S., from wildfires to rising sea levels. It features testimonies from experts and local communities facing these challenges.</p>
+    
+            <div class="video-selector">
+                <div class="number-container">
+                    <span class="number-text">Wildfires</span>
+                    <div class="number selected" onclick="changeVideo(1, this)">1</div>
+                </div>
+                <div class="number-container">
+                    <span class="number-text">Effects on Public Health</span>
+                    <div class="number" onclick="changeVideo(2, this)">2</div>
+                </div>
+                <div class="number-container">
+                    <span class="number-text">Testimonies from Affected Communities</span>
+                    <div class="number" onclick="changeVideo(3, this)">3</div>
+                </div>
+                <div class="number-container">
+                    <span class="number-text">Mitigation Initiatives</span>
+                    <div class="number" onclick="changeVideo(4, this)">4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="image-block">
+            <img src="img_prueba/JoyBoy.jpg" alt="Wildfires in the U.S." />
+            <h4>Wildfires</h4>
+            <p>Wildfires have increased in frequency and intensity in the U.S., affecting vast areas and communities.</p>
+        </div>
+        <div class="image-block">
+            <img src="img_prueba/re4remake.jpg" alt="Mitigation Initiatives" />
+            <h4>Mitigation Initiatives</h4>
+            <p>Diverse initiatives are being implemented to mitigate the effects of climate change, including reforestation and transitioning to renewable energies.</p>
+        </div>
+    </div>
+</section>
+
+
+    <script src="USA-PERU.js"></script>
+</body>
+</html>

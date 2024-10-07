@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Us a Climate Story!</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/3c0a53a71d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="" class="logo"><img src="Resources/img/X-VSPACE.png" alt="Logo" /></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Resources/img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">HOME</a></li>
+                    <li><a href="#somos">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#recursos">RESOURCES</a></li>
+                    <li class="btn-1" id = "story-button">
+                        <span id="story-span"><i class="fa-solid fa-location-dot"></i> STORY</span>
+                        <ul class="dropdown">
+                            <li><a href="#" class="country"></i>USA</a></li>
+                            <li><a href="#" class="country"></i>PERU</a></li>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                        const storyButton = document.getElementById('story-button');
+                        const dropdown = storyButton.querySelector('.dropdown');
+                    
+                        storyButton.addEventListener('click', function(event) {
+                            event.stopPropagation();
+                            dropdown.classList.toggle('active');
+                        });
+                
+                        document.addEventListener('click', function() {
+                            dropdown.classList.remove('active');
+                        });
+                    });
+                            </script>
+                        </ul>
+                    </li>
+                </ul>   
+            </nav>       
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <span>Climate Impact</span>
+                <h1>NATIONS IN EMERGENCY</h1>
+                <p>Our planet is facing a complex phenomenon that affects not only the environment, but also various factors like the economy, public health, and social stability. Combating it requires a comprehensive approach and it's up to us.</p>
+                <a href="#information" class="btn-2"><i class="fa-solid fa-newspaper"></i> INFORMATION</a>
+                <a href="#power-bi" class="btn-2"><i class="fa-solid fa-chart-line"></i> DASHBOARD</a>
+            </div>
+            <div class="header-img">
+                <img src="Resources/img/gif_planet.gif" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="select">
+        <h1>NUESTRO PLANETA IMPORTA</h1>
+        <script src="script_subheader.js"></script>
+    </div>
+
+     <!-- AGREGADO DEBAJO DEL HEADER -->
+     <div class="contenedor" id="inicio">
+        <div class="img-1">
+            <div class="img-1-izquierda"><img src="Resources/img/1.webp" alt=""></div>
+            <div class="text-derecha">
+                <h1>Is climate change real?</h1>
+                <p>Since the late 19th century, Earth's temperature has risen approximately 2 degrees Fahrenheit (1 degree Celsius), primarily due to human activities. According to the Intergovernmental Panel on Climate Change (IPCC), this influence has transitioned from a theory to a proven fact.
+                    Scientific evidence includes data from ice cores demonstrating an increase in carbon dioxide (CO₂) since the Industrial Revolution, a rate 250 times faster than during natural periods. The ocean has absorbed much of this additional heat, increasing its temperature and impacting ecosystems.</p><br>
+                <p>Ice sheets in Greenland and Antarctica are shrinking, contributing to rising sea levels, which have increased approximately 8 inches (20 centimeters) in the past century. Additionally, extreme weather events, such as heat waves and heavy rainfall, are becoming more frequent.</p><br>
+            </p>Climate change is a global crisis that demands immediate action. Transitioning to renewable energy sources and reducing emissions are essential to ensure a sustainable future. Despite the challenges, we have the capacity to alter our trajectory and protect our planet.</p>
+            </div>
+        </div>
+        
+        <section class="contenedor-porcent-t">
+        <div class="contenedor-porcentajes">
+
+            <div class="porcentaje">
+                <h4>30%</h4>
+                <div class="text-porcentajes">
+                    <h3 class="sub-titulo-porcentaje">Atmospheric CO₂ Increase</h3>
+                    <p>Since the Industrial Revolution, the acidity of ocean surface waters has increased by approximately 30%. This increase is due to the oceans absorbing a significant portion of carbon dioxide emissions, which affects marine ecosystems.</p>
+                </div>
+                
+            </div>
+            <div class="porcentaje">
+                <h4>20%</h4>
+                <div class="text-porcentajes">
+                    <h3 class="sub-titulo-porcentaje">Sea Level Rise</h3>
+                    <p>Sea level has risen by about 20% in the last century. However, in the last two decades, the rate of increase has accelerated, doubling the rate of the past century, posing a growing risk to coastal communities and infrastructure.</p>
+                </div>
+            </div>
+
+            <div class="porcentaje">
+                <h4>1°C</h4>
+                <div class="text-porcentajes">
+                    <h3 class="sub-titulo-porcentaje">Global Warming</h3>
+                    <p>The average temperature of the Earth's surface has increased by approximately 1°C (2 degrees Fahrenheit) since the late 19th century. This change is primarily driven by the increase in greenhouse gas emissions, and most of the warming has occurred in the last 40 years.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+        <section class="texto-img-2" id="somos">
+            <div class="text-block-img-2">
+                <h1>VISION</h1>
+                <p>To be a reference in education and awareness about climate change, empowering new generations to become agents of change in the pursuit of a sustainable and resilient future. We aim to inspire communities to understand the impact of their actions and motivate them to act collectively and responsibly.</p>
+                <br><h1>MISSION</h1>
+                <p>To develop and share accessible narratives based on scientific data that inform and educate about climate change. Through interactive platforms and playful tools, our team is committed to fostering understanding and engagement towards sustainability, involving people of all ages in the fight against this global crisis.</p>
+            </div>
+            <div class="img-2-right"><img src="Resources/img/2.webp" alt=""></div>        
+        </div>
+        
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <!--FIN DE LO AGREGADO DEBAJO DEL HEADER-->
+    <section class="image-section">
+        <div class="image-container">
+            <div class="image-item">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/16647.webp?w=760&h=571" class="image"/>
+                <p>Sea level rise is one of the most evident and concerning effects of climate change. This phenomenon is primarily caused by melting glaciers and thermal expansion of water. The information presented is based on studies by the IPCC and NOAA, which analyze the impact of climate change on the environment. Immediate action is crucial to mitigate these effects and protect our coasta</p>
+            </div>
+            <div class="image-item">
+                <img src="https://dam.ngenespanol.com/wp-content/uploads/2021/08/000_9G24YE.jpg" class="image"/>
+                <p>Burning garbage significantly contributes to climate change by releasing large amounts of carbon dioxide (CO₂) and other greenhouse gases. This process not only pollutes the air but also affects public health and ecosystems. Additionally, burning plastics generates toxic compounds that can harm the environment. Reducing and recycling waste are sustainable alternatives that can mitigate this impact.</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="blog">
+            <h2>Nations on Alert: Global Temperature Rise</h2>
+            <p>In 2024, the increase in global temperatures has been notably higher compared to previous years, and various reliable sources such as NASA and National Geographic have documented this phenomenon. Here’s a summary of the most relevant data:
+                May 2024 was recorded as the hottest month in modern history, marking a full year of monthly temperature records. This indicates an alarming trend in global warming.
+                According to NASA, the average surface temperature of the planet has increased by approximately 2 degrees Fahrenheit (1 degree Celsius) since the late 19th century. This increase is primarily attributed to human activities, such as the burning of fossil fuels.
+                The National Oceanic and Atmospheric Administration (NOAA) reported that 2023 was the warmest year ever recorded, and it is expected that 2024 will surpass this record, highlighting the acceleration of global warming.
+                Data from the European Copernicus Observatory indicates that on July 22, 2024, the daily global average temperature reached a new record, underscoring the severity of the current climate situation.
+                The effects of global warming are visible and are expected to worsen in the coming decades, including ice loss, rising sea levels, and more intense heat waves.</p>
+            <br><h3>Countries with Temperature Increase 2024</h3><br>
+                <div id="map" style="height: 500px; width: 100%;"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3lSP4IqTCfw6H356y9br2F4jEpsGqyU"></script>
+            <script src="Script.js"></script> 
+        </section>              
+
+        <section class="custom-section" id="information">
+            <h2>What is happening currently</h2>
+            <div class="custom-container">
+                <div class="info-box">
+                    <img src="https://e.rpp-noticias.io/xlarge/2023/04/17/494049_1416155.jpg" alt="inundaciones" class="custom-image">
+                    <h3>INUNDACIONES</h3>
+                    <p>Las inundaciones son el desbordamiento de agua sobre áreas que normalmente están secas. Pueden ser causadas por lluvias intensas, deshielo, tormentas, o la ruptura de presas...</p>
+                    <a href="https://www.ejemplo1.com" class="button">Conocer más -></a>
+                </div>
+                <div class="info-box">
+                    <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2018/10/29/8cf56918-7e0e-46d7-81f6-91b3f43ca878/tecnologia-ireact-app-desastres-naturales" alt="incendios" class="custom-image">
+                    <h3>INCENDIOS FORESTALES</h3>
+                    <p>Los incendios forestales son fuegos no controlados que se propagan en áreas forestales y de vegetación...</p>
+                    <a href="https://www.ejemplo2.com" class="button">Conocer más -></a>
+                </div>
+                <div class="info-box">
+                    <img src="https://elcomercio.pe/resizer/v2/HWOSHWHMZZCULCKEZI77WHR5YA.jpg?auth=d760a70453e63c53dd82d4c7b00a8332dbeda7c6c00424ce8c3304628bf937d8&width=1200&height=680&quality=75&smart=true" alt="sequías" class="custom-image">
+                    <h3>SEQUÍAS</h3>
+                    <p>Las sequías son períodos prolongados de escasez de agua, que pueden ocurrir debido a la falta de precipitaciones...</p>
+                    <a href="https://www.ejemplo3.com" class="button">Conocer más -></a>
+                </div>
+            </div>
+        </section> 
+        <!---AGREGADO DE POWER BI -->
+        <section id="power-bi">
+            <div class="power-bi-frame">
+                <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYmNjNzBmMWYtYzFjZS00NjA3LTk2MGUtODYxNTUwZmRjMzhkIiwidCI6ImI0YTQwNTQ1LTc3NzktNGIzOC1hZmY3LTFmMTczOGY4MDg0MCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+
+         <!---AGREGADO DE Recursos-->
+         <section id="recursos" id="recursos">
+            <h2>Recursos Utilizados</h2>
+            <div class="recursos-container">
+                <div class="recurso">
+                    <h3>Data</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.ipcc.ch/" target="_blank">Informe del IPCC sobre Cambio Climático</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nasa.gov/earth" target="_blank">NASA: Cambio Climático y la Tierra</a>
+                        </li>
+                        <li>
+                            <a href="https://www.wmo.int/" target="_blank">Organización Meteorológica Mundial (OMM)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recurso">
+                    <h3>Referencias</h3>
+                    <ul>
+                        <li>
+                            <a href="https://ciencia.nasa.gov/cambio-climatico/evidencia/" target="_blank">How do we know that climate change is real?</a>
+                        </li>
+                        <li>
+                            <a href="https://ciencia.nasa.gov/resource/aumento-del-nivel-del-mar/" target="_blank">Sea Level Rise</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">Greenpeace</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recurso">
+                    <h3>Más Recursos</h3>
+                    <ul>
+                        <li>
+                            <a href="" target="_blank">Naciones Unidas: Cambio Climático</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">CDC: Salud y Cambio Climático</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">National Geographic: Cambio Climático</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>                  
+</body>
+</html>

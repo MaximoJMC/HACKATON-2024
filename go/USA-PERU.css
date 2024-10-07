@@ -1,0 +1,199 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*CARRUSEL*/
+
+img{
+
+
+  border-radius: 8px; /* Opcional: para bordes redondeados */
+
+}
+
+
+.contenedor-titulos_carrusel {
+
+  text-align: center;
+  background-color: aquamarine;
+  
+
+}
+
+.titulo-carrusel {
+
+  font-size: 35px;
+
+}
+
+.sub_titulo_carrusel{
+
+  font-size: 16px;
+}
+#carouselExampleCaptions{
+  
+  width: 600px;
+  height: 300px;
+  
+  margin-top: 80px;
+  margin-left: 500px;
+
+  box-shadow: 12px 10px 20px rgba(0, 0.6, 0.6, 0.6); /* Sombra */
+
+}
+
+
+/*VIDEO + DESCRIPCION*/
+
+.container-video {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 200px;
+  
+}
+
+.titulo-video {
+  width: 20%;
+  height: 100px;
+  
+  background-color: #1e73be; /* Azul */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.video-section {
+  background-color: #000; /* Negro */
+  padding: 20px;
+  text-align: center;
+}
+
+video {
+  width: 80%;
+  height: auto;
+}
+
+.text-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  width: 48%;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column p {
+  margin-bottom: 15px;
+}
+
+
+/*MULTI VIDEO*/
+
+.container-multi-video {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+.left-section {
+  width: 45%;
+  height: 800px;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  margin-left: 60px;
+}
+
+.video-container {
+  background-color: #1e73be; /* Azul */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-info {
+  margin-top: 20px;
+}
+
+.video-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.video-info p {
+  margin-bottom: 20px;
+}
+
+.video-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.number-text {
+  font-size: 1rem;
+  color: white;
+  margin-right: 15px;
+}
+
+.number-container .number {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  
+}
+
+.number.selected {
+  color: #ff0; /* Amarillo para el número seleccionado */
+}
+
+.number:hover {
+  color: #ff0; /* Amarillo en hover */
+}
+
+.right-section {
+  width: 35%;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.image-block {
+  margin-bottom: 20px;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.image-block p {
+  font-size: 1rem;
+  color: white;
+}
